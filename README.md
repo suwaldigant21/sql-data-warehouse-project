@@ -1,20 +1,65 @@
-# Data Warehouse and Analytics Project
+# Data Warehouse & Analytics Project
 
-Welcome to the **Data Warehouse and Analytics Project** repository!
+Welcome to the **Data Warehouse & Analytics Project** 🚀  
+This repo showcases a full data warehousing workflow from raw data ingestion to clean, business‑ready analytics.
 
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. It is designed as a portfolio project that highlights the end-to-end process.
+---
 
-## Architecture
+## 🏗️ Architecture
 
-![Data Architecture](docs/data_architecture.png)
+We follow the **Medallion Architecture** pattern with three layers:
 
-View the full diagram: [docs/data_architecture.png](docs/data_architecture.png)
+1. **Bronze Layer**  
+   - Raw data straight from source systems (CSV files).   
 
-## Project Requirements
+2. **Silver Layer**  
+   - Cleaned and standardized data.  
+   - Includes trimming, normalization, and fixing invalid values.  
 
-### Building the Data Warehouse (Data Engineering)
+3. **Gold Layer**  
+   - Business‑ready data modeled into a **star schema**.  
+   - Dimension tables (`dim_customers`, `dim_products`) and fact tables (`fact_sales`) for analytics.  
 
-#### Objective
+ ## 📊 Architecture diagram 
+<img width="1326" height="784" alt="data_architecture" src="https://github.com/user-attachments/assets/ec17917c-ea0b-4497-982e-39ed3aa3f813" />
+
+---
+
+## 📂 Dataset
+
+- The dataset used in this project is included in the repo under the [`dataset`](./dataset) folder.  
+- Source systems : **CRM** and **ERP**.  
+- Data is ingested from CSV files into SQL Server Express using SQL Server Management Studio (SSMS).
+
+---
+
+## ⚙️ Tools Used
+
+- **SQL Server Express** → database engine.  
+- **SQL Server Management Studio (SSMS)** → development and management.  
+- **Git & GitHub** → version control and collaboration.  
+- **draw.io** → diagrams and architecture visuals.  
+
+---
+
+## 📖 Project Highlights
+
+1. **ETL Pipelines**  
+   - Scripts to load Bronze → Silver → Gold layers.  
+   - Includes cleansing, normalization, and surrogate key generation.
+
+2. **Data Modeling**  
+   - Dimension tables (`dim_customers`, `dim_products`).  
+   - Fact table (`fact_sales`).  
+   - Surrogate keys (`*_key`) for star schema joins.
+
+3. **Analytics & Reporting**  
+   - SQL queries for foreign key integrity checks.  
+   - Example reports: sales by product, sales by customer, missing dimension links.
+
+---
+
+### Objective
 Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
 #### Specifications
@@ -24,19 +69,18 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 - **Scope**: Focus on the latest dataset only; historization of data is not required.
 - **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
-### BI: Analytics & Reporting (Data Analytics)
 
-#### Objective
+
+### Objective
 Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**n- **Product Performance**
+- **Customer Behavior**
+- **Product Performance**
 - **Sales Trends**
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
-## License
+## License🛡️
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
+This project is licensed under the 🛡️[MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
 
-## About Me
 
-Hi there! I'm Digant Suwal. I am currently progressing in this project.
