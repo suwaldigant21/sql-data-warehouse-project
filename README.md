@@ -27,7 +27,7 @@ We follow the **Medallion Architecture** pattern with three layers:
 
 ## 📂 Dataset
 
-- The dataset used in this project is included in the repo under the [`dataset`](./dataset) folder.  
+- The dataset used in this project is included in the repo under the dataset folder.  
 - Source systems : **CRM** and **ERP**.  
 - Data is ingested from CSV files into SQL Server Express using SQL Server Management Studio (SSMS).
 
